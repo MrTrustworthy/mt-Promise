@@ -177,4 +177,4 @@ Promise.prototype.then = function(onResolve, onError, onUpdate) {
 
 };
 
-if(typeof module !== undefined && typeof module.exports !== "undefined") module.exports.Deferred = Deferred;
+if(typeof module === "object") module.exports = Deferred;
